@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
     env: {
         CF_SPACE: "ze2g0ifdumaq",
