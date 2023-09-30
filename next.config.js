@@ -2,7 +2,7 @@
 const nextConfig = {
     env: {
         CF_SPACE: "ze2g0ifdumaq",
-        CF_ACCESS_TOKEN: 'if94y_G0nXNW3zPhRi8hOU82QlY_3hiS4fMGgt5iZ30'
+        CF_ACCESS_TOKEN: 'GUU4tbTSi4KLVddb9GxRWkfT4U63JXdaTQ8DYbuMgPY'
     }
 }
 

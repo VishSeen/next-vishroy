@@ -33,6 +33,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-next.config.js
 .env.local
 
+next.config.js
