@@ -5,7 +5,7 @@ import Logo from '@/components/logo/logo';
 import HeroHeadline from '@/components/hero-headline/hero-headline';
 import { theme } from '@/styles/theme';
 import { ThemeProvider } from 'styled-components';
-import useContentful from '@/services/client';
+import useContentful from '@/hooks/use-contentful';
 import {topbarSchema, heroHeadlineSchema} from '@/gql/queries';
 
 
