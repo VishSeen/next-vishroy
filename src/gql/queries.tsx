@@ -1,7 +1,41 @@
 import { gql } from "@apollo/client";
 
 
-const topbarSchema = gql`
+const heroHeadlineSchema = `
+    query {
+        heroHeadlineCollection {
+            items {
+                title
+                subtitle
+            }
+        }
+    }
+`;
+
+const topbarSchema = `
+    query {
+        topBarCollection {
+            items {
+                className
+                logo {
+                    classname
+                    title
+                    href
+                }
+                navigationBarCollection {
+                    items {
+                        classname
+                        title
+                        url
+                    }
+                }
+            }
+        }
+    }
+`;
+
+
+const projectListSchema = `
     query {
         topBarCollection {
             items {
@@ -14,21 +48,8 @@ const topbarSchema = gql`
     }
 `;
 
-
-const projectListSchema = gql`
-    query {
-        topBarCollection {
-            items {
-                name
-                logo {
-                    title
-                }
-            }
-        }
-    }
-`;
-
-export default {
+export {
+    heroHeadlineSchema,
     topbarSchema,
     projectListSchema
 };
