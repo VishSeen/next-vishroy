@@ -12,8 +12,6 @@ import {topbarSchema, heroHeadlineSchema} from '@/gql/queries';
 
 export default function Home() {
     const data = useContentful(heroHeadlineSchema);
-    console.log(data);
-
 
     return (
         <ThemeProvider theme={theme}>

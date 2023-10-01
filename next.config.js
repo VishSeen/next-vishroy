@@ -2,8 +2,9 @@
 
 const nextConfig = {
     env: {
-        CF_SPACE: "ze2g0ifdumaq",
-        CF_ACCESS_TOKEN: 'GUU4tbTSi4KLVddb9GxRWkfT4U63JXdaTQ8DYbuMgPY'
+        CF_SPACE: process.env.NEXT_PUBLIC_CF_SPACE,
+        CF_ACCESS_TOKEN: process.env.NEXT_PUBLIC_CF_ACCESS_TOKEN
+
     }
 }
 
