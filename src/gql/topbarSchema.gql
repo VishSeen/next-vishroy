@@ -1,19 +1,4 @@
-import { gql } from "@apollo/client";
-
-
-const heroHeadlineSchema = gql`
-    query {
-        heroHeadlineCollection {
-            items {
-                title
-                subtitle
-            }
-        }
-    }
-`;
-
-const topbarSchema = gql`
-    query {
+query {
         topBarCollection {
             items {
                 className
@@ -32,10 +17,3 @@ const topbarSchema = gql`
             }
         }
     }
-`;
-
-
-export {
-    heroHeadlineSchema,
-    topbarSchema
-};
