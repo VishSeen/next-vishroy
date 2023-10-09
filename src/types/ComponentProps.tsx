@@ -1,4 +1,4 @@
-import { Image } from './Types'
+import { ImageType, LinkType } from './Types'
 
 
 export type HeroHeadlineProps = {
@@ -10,6 +10,13 @@ export type HeroHeadlineProps = {
 export type LogoProps = {
     className?: string;
     title?: string;
-    image?: Image;
+    image?: ImageType;
     href?: string;
 }
+
+
+export type NavBarProps = {
+    className?: string;
+    linkItems: [LinkType];
+}
+

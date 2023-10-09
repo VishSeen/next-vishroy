@@ -6,24 +6,40 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@apollo/client": "^3.8.4",
     "contentful": "^10.5.2",
     "dotenv": "^16.3.1",
     "graphql": "^16.8.1",
+    "gsap": "^3.12.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "storybook-addon-next": "^1.8.0",
     "styled-components": "^6.0.8"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.4.6",
+    "@storybook/addon-essentials": "^7.4.6",
+    "@storybook/addon-interactions": "^7.4.6",
+    "@storybook/addon-links": "^7.4.6",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/addon-themes": "^7.4.6",
+    "@storybook/blocks": "^7.4.6",
+    "@storybook/nextjs": "^7.4.6",
+    "@storybook/react": "^7.4.6",
+    "@storybook/testing-library": "^0.2.2",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "eslint-plugin-storybook": "^0.6.15",
+    "storybook": "^7.4.6",
     "typescript": "latest"
   }
 }

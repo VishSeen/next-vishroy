@@ -2,6 +2,7 @@ import { HeroHeadlineProps } from "@/types/ComponentProps";
 import { FunctionComponent, useEffect } from "react";
 import StyleHeroHeadline from "./style";
 import { useQuery, gql } from '@apollo/client';
+import { comforta } from "../../styles/fonts";
 
 const HeroHeadline: FunctionComponent<HeroHeadlineProps> = ({
     className,
@@ -17,13 +18,12 @@ const HeroHeadline: FunctionComponent<HeroHeadlineProps> = ({
 
                 {
                     subTitle ? (
-                        <span className="hero-headline__subtitle">
+                        <span className="hero-headline__subtitle" style={comforta.style}>
                             {subTitle}
                         </span>
                     ) : <></>
                 }
             </p>
-
         </StyleHeroHeadline>
     )
 }
